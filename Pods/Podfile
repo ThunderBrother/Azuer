@@ -1,0 +1,22 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+#use_frameworks!
+workspace '../AzuerPro.xcworkspace'
+
+pod 'JSONModel'
+pod 'MagicalRecord'
+pod 'AFNetworking'
+pod 'SDWebImage'
+#pod 'SDWebImage/WebP'
+pod 'KVOController'
+pod 'PureLayout'
+pod 'MBProgressHUD'
+pod 'ReactiveCocoa', '~>2.5'
+pod 'Toast'
+
+target 'AzuerPro' do
+    project '../AzuerPro/AzuerPro.xcodeproj'
+    pod 'Masonry'
+end
+
+

@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3EB46834A7E169EE84A87C1 /* libPods-AzuerPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DDA743C225DC1475C7E126 /* libPods-AzuerPro.a */; };
+		F9A376DF1E10E12C0074FEA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376DE1E10E12C0074FEA8 /* main.m */; };
+		F9A376E21E10E12C0074FEA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376E11E10E12C0074FEA8 /* AppDelegate.m */; };
+		F9A376E51E10E12C0074FEA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376E41E10E12C0074FEA8 /* ViewController.m */; };
+		F9A376E81E10E12C0074FEA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A376E61E10E12C0074FEA8 /* Main.storyboard */; };
+		F9A376EA1E10E12C0074FEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A376E91E10E12C0074FEA8 /* Assets.xcassets */; };
+		F9A376ED1E10E12C0074FEA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A376EB1E10E12C0074FEA8 /* LaunchScreen.storyboard */; };
+		F9A376F81E10E12C0074FEA8 /* AzuerProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376F71E10E12C0074FEA8 /* AzuerProTests.m */; };
+		F9A377031E10E12C0074FEA8 /* AzuerProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A377021E10E12C0074FEA8 /* AzuerProUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9A376F41E10E12C0074FEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A376D21E10E12C0074FEA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A376D91E10E12C0074FEA8;
+			remoteInfo = AzuerPro;
+		};
+		F9A376FF1E10E12C0074FEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A376D21E10E12C0074FEA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A376D91E10E12C0074FEA8;
+			remoteInfo = AzuerPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A39B4CC4A69B1FA5EDE0D860 /* Pods-AzuerPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzuerPro.debug.xcconfig"; path = "../Pods/Pods/Target Support Files/Pods-AzuerPro/Pods-AzuerPro.debug.xcconfig"; sourceTree = "<group>"; };
+		C8DDA743C225DC1475C7E126 /* libPods-AzuerPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AzuerPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A376DA1E10E12C0074FEA8 /* AzuerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzuerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A376DE1E10E12C0074FEA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9A376E01E10E12C0074FEA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9A376E11E10E12C0074FEA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9A376E31E10E12C0074FEA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9A376E41E10E12C0074FEA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9A376E71E10E12C0074FEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9A376E91E10E12C0074FEA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A376EC1E10E12C0074FEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9A376EE1E10E12C0074FEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A376F31E10E12C0074FEA8 /* AzuerProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzuerProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A376F71E10E12C0074FEA8 /* AzuerProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzuerProTests.m; sourceTree = "<group>"; };
+		F9A376F91E10E12C0074FEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A376FE1E10E12C0074FEA8 /* AzuerProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzuerProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A377021E10E12C0074FEA8 /* AzuerProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzuerProUITests.m; sourceTree = "<group>"; };
+		F9A377041E10E12C0074FEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5D064BF2F5CA447804EA0A /* Pods-AzuerPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzuerPro.release.xcconfig"; path = "../Pods/Pods/Target Support Files/Pods-AzuerPro/Pods-AzuerPro.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A376D71E10E12C0074FEA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EB46834A7E169EE84A87C1 /* libPods-AzuerPro.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376F01E10E12C0074FEA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376FB1E10E12C0074FEA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2302A5BB69A369697C088F3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4CC4A69B1FA5EDE0D860 /* Pods-AzuerPro.debug.xcconfig */,
+				FB5D064BF2F5CA447804EA0A /* Pods-AzuerPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		821ECDF34D1C7B1385674863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8DDA743C225DC1475C7E126 /* libPods-AzuerPro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9A376D11E10E12C0074FEA8 = {
+			isa = PBXGroup;
+			children = (
+				F9A376DC1E10E12C0074FEA8 /* AzuerPro */,
+				F9A376F61E10E12C0074FEA8 /* AzuerProTests */,
+				F9A377011E10E12C0074FEA8 /* AzuerProUITests */,
+				F9A376DB1E10E12C0074FEA8 /* Products */,
+				2302A5BB69A369697C088F3D /* Pods */,
+				821ECDF34D1C7B1385674863 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A376DB1E10E12C0074FEA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A376DA1E10E12C0074FEA8 /* AzuerPro.app */,
+				F9A376F31E10E12C0074FEA8 /* AzuerProTests.xctest */,
+				F9A376FE1E10E12C0074FEA8 /* AzuerProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A376DC1E10E12C0074FEA8 /* AzuerPro */ = {
+			isa = PBXGroup;
+			children = (
+				F9A376E01E10E12C0074FEA8 /* AppDelegate.h */,
+				F9A376E11E10E12C0074FEA8 /* AppDelegate.m */,
+				F9A376E31E10E12C0074FEA8 /* ViewController.h */,
+				F9A376E41E10E12C0074FEA8 /* ViewController.m */,
+				F9A376E61E10E12C0074FEA8 /* Main.storyboard */,
+				F9A376E91E10E12C0074FEA8 /* Assets.xcassets */,
+				F9A376EB1E10E12C0074FEA8 /* LaunchScreen.storyboard */,
+				F9A376EE1E10E12C0074FEA8 /* Info.plist */,
+				F9A376DD1E10E12C0074FEA8 /* Supporting Files */,
+			);
+			path = AzuerPro;
+			sourceTree = "<group>";
+		};
+		F9A376DD1E10E12C0074FEA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9A376DE1E10E12C0074FEA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9A376F61E10E12C0074FEA8 /* AzuerProTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A376F71E10E12C0074FEA8 /* AzuerProTests.m */,
+				F9A376F91E10E12C0074FEA8 /* Info.plist */,
+			);
+			path = AzuerProTests;
+			sourceTree = "<group>";
+		};
+		F9A377011E10E12C0074FEA8 /* AzuerProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A377021E10E12C0074FEA8 /* AzuerProUITests.m */,
+				F9A377041E10E12C0074FEA8 /* Info.plist */,
+			);
+			path = AzuerProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A376D91E10E12C0074FEA8 /* AzuerPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A377071E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerPro" */;
+			buildPhases = (
+				751F69C07995788975B4341D /* [CP] Check Pods Manifest.lock */,
+				F9A376D61E10E12C0074FEA8 /* Sources */,
+				F9A376D71E10E12C0074FEA8 /* Frameworks */,
+				F9A376D81E10E12C0074FEA8 /* Resources */,
+				9D1EBC3941C42B257A42B851 /* [CP] Embed Pods Frameworks */,
+				B57DFA996D13A9C33D1D5D5B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzuerPro;
+			productName = AzuerPro;
+			productReference = F9A376DA1E10E12C0074FEA8 /* AzuerPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9A376F21E10E12C0074FEA8 /* AzuerProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3770A1E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerProTests" */;
+			buildPhases = (
+				F9A376EF1E10E12C0074FEA8 /* Sources */,
+				F9A376F01E10E12C0074FEA8 /* Frameworks */,
+				F9A376F11E10E12C0074FEA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A376F51E10E12C0074FEA8 /* PBXTargetDependency */,
+			);
+			name = AzuerProTests;
+			productName = AzuerProTests;
+			productReference = F9A376F31E10E12C0074FEA8 /* AzuerProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9A376FD1E10E12C0074FEA8 /* AzuerProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3770D1E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerProUITests" */;
+			buildPhases = (
+				F9A376FA1E10E12C0074FEA8 /* Sources */,
+				F9A376FB1E10E12C0074FEA8 /* Frameworks */,
+				F9A376FC1E10E12C0074FEA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A377001E10E12C0074FEA8 /* PBXTargetDependency */,
+			);
+			name = AzuerProUITests;
+			productName = AzuerProUITests;
+			productReference = F9A376FE1E10E12C0074FEA8 /* AzuerProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A376D21E10E12C0074FEA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Azuer;
+				TargetAttributes = {
+					F9A376D91E10E12C0074FEA8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GLGC3CX682;
+						ProvisioningStyle = Automatic;
+					};
+					F9A376F21E10E12C0074FEA8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GLGC3CX682;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9A376D91E10E12C0074FEA8;
+					};
+					F9A376FD1E10E12C0074FEA8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GLGC3CX682;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9A376D91E10E12C0074FEA8;
+					};
+				};
+			};
+			buildConfigurationList = F9A376D51E10E12C0074FEA8 /* Build configuration list for PBXProject "AzuerPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A376D11E10E12C0074FEA8;
+			productRefGroup = F9A376DB1E10E12C0074FEA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A376D91E10E12C0074FEA8 /* AzuerPro */,
+				F9A376F21E10E12C0074FEA8 /* AzuerProTests */,
+				F9A376FD1E10E12C0074FEA8 /* AzuerProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9A376D81E10E12C0074FEA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A376ED1E10E12C0074FEA8 /* LaunchScreen.storyboard in Resources */,
+				F9A376EA1E10E12C0074FEA8 /* Assets.xcassets in Resources */,
+				F9A376E81E10E12C0074FEA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376F11E10E12C0074FEA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376FC1E10E12C0074FEA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		751F69C07995788975B4341D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1EBC3941C42B257A42B851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods/Target Support Files/Pods-AzuerPro/Pods-AzuerPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57DFA996D13A9C33D1D5D5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods/Target Support Files/Pods-AzuerPro/Pods-AzuerPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A376D61E10E12C0074FEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A376E51E10E12C0074FEA8 /* ViewController.m in Sources */,
+				F9A376E21E10E12C0074FEA8 /* AppDelegate.m in Sources */,
+				F9A376DF1E10E12C0074FEA8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376EF1E10E12C0074FEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A376F81E10E12C0074FEA8 /* AzuerProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A376FA1E10E12C0074FEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A377031E10E12C0074FEA8 /* AzuerProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9A376F51E10E12C0074FEA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A376D91E10E12C0074FEA8 /* AzuerPro */;
+			targetProxy = F9A376F41E10E12C0074FEA8 /* PBXContainerItemProxy */;
+		};
+		F9A377001E10E12C0074FEA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A376D91E10E12C0074FEA8 /* AzuerPro */;
+			targetProxy = F9A376FF1E10E12C0074FEA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9A376E61E10E12C0074FEA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A376E71E10E12C0074FEA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9A376EB1E10E12C0074FEA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A376EC1E10E12C0074FEA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9A377051E10E12C0074FEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9A377061E10E12C0074FEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A377081E10E12C0074FEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39B4CC4A69B1FA5EDE0D860 /* Pods-AzuerPro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/KVOController\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MagicalRecord\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+				);
+				INFOPLIST_FILE = AzuerPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KVOController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)";
+			};
+			name = Debug;
+		};
+		F9A377091E10E12C0074FEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5D064BF2F5CA447804EA0A /* Pods-AzuerPro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/KVOController\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MagicalRecord\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+				);
+				INFOPLIST_FILE = AzuerPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KVOController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)";
+			};
+			name = Release;
+		};
+		F9A3770B1E10E12C0074FEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				INFOPLIST_FILE = AzuerProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzuerPro.app/AzuerPro";
+			};
+			name = Debug;
+		};
+		F9A3770C1E10E12C0074FEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				INFOPLIST_FILE = AzuerProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzuerPro.app/AzuerPro";
+			};
+			name = Release;
+		};
+		F9A3770E1E10E12C0074FEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				INFOPLIST_FILE = AzuerProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AzuerPro;
+			};
+			name = Debug;
+		};
+		F9A3770F1E10E12C0074FEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GLGC3CX682;
+				INFOPLIST_FILE = AzuerProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zuming.AzuerProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AzuerPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A376D51E10E12C0074FEA8 /* Build configuration list for PBXProject "AzuerPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A377051E10E12C0074FEA8 /* Debug */,
+				F9A377061E10E12C0074FEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A377071E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A377081E10E12C0074FEA8 /* Debug */,
+				F9A377091E10E12C0074FEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3770A1E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3770B1E10E12C0074FEA8 /* Debug */,
+				F9A3770C1E10E12C0074FEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3770D1E10E12C0074FEA8 /* Build configuration list for PBXNativeTarget "AzuerProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3770E1E10E12C0074FEA8 /* Debug */,
+				F9A3770F1E10E12C0074FEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9A376D21E10E12C0074FEA8 /* Project object */;
+}
