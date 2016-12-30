@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
+    <entity name="CdnLog" syncable="YES">
+        <attribute name="cdnLog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="netType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saveTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="NetworkLog" syncable="YES">
+        <attribute name="networkLog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saveTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NetworkLog" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CdnLog" positionX="-63" positionY="0" width="128" height="90"/>
+    </elements>
+</model>

@@ -4,6 +4,7 @@ inhibit_all_warnings!
 workspace '../AzuerPro.xcworkspace'
 
 pod 'JSONModel'
+pod 'CocoaLumberjack'
 pod 'MagicalRecord'
 pod 'AFNetworking'
 pod 'SDWebImage'
@@ -13,6 +14,10 @@ pod 'PureLayout'
 pod 'MBProgressHUD'
 pod 'ReactiveCocoa', '~>2.5'
 pod 'Toast'
+
+target 'AZKit' do
+    project '../AZKit/AZKit.xcodeproj'
+end
 
 target 'AzuerPro' do
     project '../AzuerPro/AzuerPro.xcodeproj'
