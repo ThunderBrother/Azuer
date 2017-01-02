@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSModel.h"
 
 #ifndef PHONE_TRACK_TYPE

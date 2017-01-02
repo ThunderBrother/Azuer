@@ -7,7 +7,7 @@
 //
 
 #import "OTSTableViewCell.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "NSObject+Notification.h"
 
 @implementation OTSTableViewCell

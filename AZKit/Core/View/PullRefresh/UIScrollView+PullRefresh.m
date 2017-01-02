@@ -10,7 +10,7 @@
 #import "NSObject+Runtime.h"
 #import "UIView+Frame.h"
 #import "NSObject+FBKVOController.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation UIScrollView (PullRefresh)
 

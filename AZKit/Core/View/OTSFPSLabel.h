@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 /**
  Show Screen FPS...

@@ -11,7 +11,7 @@
 //global
 #import "OTSClientInfo.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 //category
 #import "NSObject+Notification.h"
 //tools

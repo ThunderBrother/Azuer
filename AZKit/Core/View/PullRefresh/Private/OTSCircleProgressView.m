@@ -9,7 +9,7 @@
 #import "OTSCircleProgressView.h"
 #import "UIView+Frame.h"
 #import "UIColor+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation OTSCircleProgressView {
     CAShapeLayer *_layer;

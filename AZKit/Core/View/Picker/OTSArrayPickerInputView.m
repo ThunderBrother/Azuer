@@ -9,7 +9,7 @@
 #import "OTSArrayPickerInputView.h"
 #import "NSArray+safe.h"
 #import "UIView+Frame.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @interface OTSBasePickerInputView ()
 

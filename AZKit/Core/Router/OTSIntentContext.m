@@ -9,7 +9,7 @@
 #import "OTSIntentContext.h"
 //#import <libkern/OSAtomic.h>
 #import "OTSWeakObjectDeathNotifier.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "NSObject+Runtime.h"
 
 @implementation OTSIntentContext {

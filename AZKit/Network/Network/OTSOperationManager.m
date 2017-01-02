@@ -31,7 +31,7 @@
 #import "NSMutableString+safe.h"
 #import "NSString+safe.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSNotificationDefine.h"
 //global
 #import "OTSClientInfo.h"

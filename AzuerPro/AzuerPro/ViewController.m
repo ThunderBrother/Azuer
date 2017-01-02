@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <SDImageCache.h>
 #import <PureLayout.h>
+#import <AZKit/AZkit.h>
 
 @interface ViewController ()
 

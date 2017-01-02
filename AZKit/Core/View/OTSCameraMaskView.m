@@ -7,7 +7,7 @@
 //
 
 #import "OTSCameraMaskView.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "UIView+Frame.h"
 
 @interface OTSCameraMaskView ()

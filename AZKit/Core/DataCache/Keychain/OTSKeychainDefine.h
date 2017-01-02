@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 OneStore. All rights reserved.
 //
 
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 FOUNDATION_EXTERN NSString *const OTSKeyChainIsActive;
 

@@ -8,7 +8,7 @@
 
 #import "OTSSimpleShape.h"
 #import "UIView+Frame.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 NSString *const OTSSimpleShapeTypeYes = @"yes";
 NSString *const OTSSimpleShapeTypeArrow = @"arrow";

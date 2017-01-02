@@ -9,7 +9,7 @@
 #import "OTSBasePickerInputView.h"
 #import "UIView+Frame.h"
 #import "UIColor+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @interface OTSBasePickerInputView ()<UIPickerViewDelegate, UIPickerViewDataSource>
 

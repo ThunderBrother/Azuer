@@ -40,7 +40,7 @@ FOUNDATION_EXPORT const unsigned char AZKitVersionString[];
 #import "UICollectionView+safe.h"
 
 //Utilities
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSNotificationDefine.h"
 #import "NSObject+JSONToVO.h"
 #import "NSObject+Notification.h"

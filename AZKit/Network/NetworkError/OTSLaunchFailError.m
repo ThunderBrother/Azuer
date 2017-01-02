@@ -9,7 +9,7 @@
 #import "OTSLaunchFailError.h"
 #import "OTSNetworkManager.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 //network
 #import "OTSOperationManager.h"
 

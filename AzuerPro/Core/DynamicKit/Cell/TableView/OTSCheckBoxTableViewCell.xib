@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OTSCheckBoxTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-8Q-15K">
+                        <rect key="frame" x="15" y="11" width="16" height="22"/>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="toggle_checkbox_no">
+                            <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="toggle_checkbox_yes">
+                            <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-Sy-ia4">
+                        <rect key="frame" x="41" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoCollapse" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-Ey-lOt">
+                        <rect key="frame" x="86.5" y="5" width="223.5" height="33.5"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOt-im-8sg">
+                                <rect key="frame" x="10" y="2" width="203.5" height="29.5"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xOt-im-8sg" firstAttribute="leading" secondItem="GTd-Ey-lOt" secondAttribute="leading" constant="10" id="Azc-Tr-Lr9"/>
+                            <constraint firstItem="xOt-im-8sg" firstAttribute="top" secondItem="GTd-Ey-lOt" secondAttribute="top" constant="2" id="BR4-0o-jBn"/>
+                            <constraint firstAttribute="bottom" secondItem="xOt-im-8sg" secondAttribute="bottom" constant="2" id="LdL-1y-72v"/>
+                            <constraint firstAttribute="trailing" secondItem="xOt-im-8sg" secondAttribute="trailing" constant="10" id="dNz-3G-Hib"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bjl-Sy-ia4" firstAttribute="leading" secondItem="YwO-8Q-15K" secondAttribute="trailing" constant="10" id="1KF-p7-xk4"/>
+                    <constraint firstItem="YwO-8Q-15K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="OYy-qv-UHR"/>
+                    <constraint firstItem="GTd-Ey-lOt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Q4U-iU-LRS"/>
+                    <constraint firstItem="YwO-8Q-15K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aRG-bM-JYp"/>
+                    <constraint firstAttribute="trailing" secondItem="GTd-Ey-lOt" secondAttribute="trailing" constant="10" id="ahZ-JB-XPU"/>
+                    <constraint firstItem="GTd-Ey-lOt" firstAttribute="leading" secondItem="bjl-Sy-ia4" secondAttribute="trailing" priority="750" constant="10" id="dQw-Wn-8Uz"/>
+                    <constraint firstItem="bjl-Sy-ia4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hhM-Wx-8eJ"/>
+                    <constraint firstItem="GTd-Ey-lOt" firstAttribute="leading" secondItem="YwO-8Q-15K" secondAttribute="trailing" priority="250" constant="10" id="kXp-DE-bHc"/>
+                    <constraint firstAttribute="bottom" secondItem="GTd-Ey-lOt" secondAttribute="bottom" constant="5" id="uw5-ma-1tD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="radioButton" destination="YwO-8Q-15K" id="acc-o3-g5W"/>
+                <outlet property="textField" destination="xOt-im-8sg" id="wui-w6-JTA"/>
+                <outlet property="textFieldContainer" destination="GTd-Ey-lOt" id="Xb4-lb-1Ci"/>
+                <outlet property="textFieldLeadingConstraint" destination="kXp-DE-bHc" id="o9m-lE-zSp"/>
+                <outlet property="titleLabel" destination="bjl-Sy-ia4" id="gmB-g5-DTG"/>
+                <outlet property="titleTrailingConstraint" destination="dQw-Wn-8Uz" id="GgY-yM-EId"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="137"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="toggle_checkbox_no" width="16" height="16"/>
+        <image name="toggle_checkbox_yes" width="16" height="16"/>
+    </resources>
+</document>

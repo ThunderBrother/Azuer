@@ -11,7 +11,7 @@
 //category
 #import "NSMutableArray+safe.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 //network
 #import "OTSOperationManager.h"
 

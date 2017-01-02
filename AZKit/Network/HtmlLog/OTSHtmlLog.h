@@ -6,7 +6,7 @@
 //  Copyright © 2016 OneStoreNetwork. All rights reserved.
 //
 
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 FOUNDATION_EXTERN NSString *const OTS_SEND_HTML_LOG;
 

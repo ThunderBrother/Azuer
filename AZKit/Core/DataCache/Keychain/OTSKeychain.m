@@ -10,7 +10,7 @@
 
 #import "KeychainItemWrapper.h"
 
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 #import "OTSLog.h"
 

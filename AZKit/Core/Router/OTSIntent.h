@@ -7,7 +7,7 @@
 //
 
 #import "OTSIntentContext.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSIntentModel.h"
 #import <UIKit/UIKit.h>
 

@@ -6,7 +6,7 @@
 //  Copyright © 2016 OneStoreNetwork. All rights reserved.
 //
 
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @interface OTSCdnLog : NSObject
 

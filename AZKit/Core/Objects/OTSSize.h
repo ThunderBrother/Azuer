@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 typedef enum OTSSizeType {
     OTSSizeTypeNone = 0,

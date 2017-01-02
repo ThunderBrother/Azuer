@@ -8,7 +8,7 @@
 
 #import "OTSCircleLoadingView.h"
 #import "UIView+Frame.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation OTSCircleLoadingView {
     CAShapeLayer *_circleLayer;

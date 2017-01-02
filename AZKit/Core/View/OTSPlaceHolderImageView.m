@@ -7,7 +7,7 @@
 //
 
 #import "OTSPlaceHolderImageView.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation OTSPlaceHolderImageView
 

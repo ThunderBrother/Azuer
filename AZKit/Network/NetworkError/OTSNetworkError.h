@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @class OTSOperationManager, OTSOperationParam;
 

@@ -7,7 +7,7 @@
 //
 
 #import "UIFont+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation UIFont (Utility)
 

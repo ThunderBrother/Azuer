@@ -8,7 +8,7 @@
 
 #import "UIImageView+Network.h"
 #import "UIImageView+WebCache.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSConvertImageString.h"
 #import "UIView+Frame.h"
 

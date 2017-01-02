@@ -8,7 +8,7 @@
 
 #import "OTSNetworkError.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @interface OTSLaunchFailError : OTSNetworkError
 

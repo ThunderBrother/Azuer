@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTSTestRouterVC">
+            <connections>
+                <outlet property="cardView" destination="iN0-l3-epB" id="wW8-RX-kxa"/>
+                <outlet property="inputContainer" destination="K1V-yl-Ais" id="LNu-hP-yYA"/>
+                <outlet property="textField" destination="DSW-MT-mOd" id="Lfd-8j-43F"/>
+                <outlet property="view" destination="zai-jg-Xmd" id="zhW-A8-Kei"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-yl-Ais">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please input router url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSW-MT-mOd">
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DSW-MT-mOd" firstAttribute="leading" secondItem="K1V-yl-Ais" secondAttribute="leading" constant="7" id="CKN-at-S4v"/>
+                        <constraint firstAttribute="trailing" secondItem="DSW-MT-mOd" secondAttribute="trailing" constant="7" id="NQz-kl-uaP"/>
+                        <constraint firstAttribute="bottom" secondItem="DSW-MT-mOd" secondAttribute="bottom" constant="7" id="PeI-XH-QfI"/>
+                        <constraint firstItem="DSW-MT-mOd" firstAttribute="top" secondItem="K1V-yl-Ais" secondAttribute="top" constant="7" id="cpX-19-A0Q"/>
+                        <constraint firstAttribute="height" constant="44" id="yaP-Gk-rCr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9y-iz-e1y">
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.34509803921568627" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="LMH-2F-T5c"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="8" minY="5" maxX="8" maxY="5"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didPressSubmitButton:" destination="-1" eventType="touchUpInside" id="yG8-Tv-Qru"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="An0-gq-n8K">
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="RpZ-9P-6TH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="5" maxX="8" maxY="5"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didPressCancelButton:" destination="-1" eventType="touchUpInside" id="p5g-zv-QsC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R9y-iz-e1y" firstAttribute="top" secondItem="K1V-yl-Ais" secondAttribute="bottom" constant="17" id="0AH-Sr-PJ9"/>
+                <constraint firstItem="K1V-yl-Ais" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="7U7-sj-B4F"/>
+                <constraint firstItem="R9y-iz-e1y" firstAttribute="leading" secondItem="An0-gq-n8K" secondAttribute="trailing" constant="15" id="Ex1-sF-M6P"/>
+                <constraint firstItem="K1V-yl-Ais" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="TBp-YZ-IhI"/>
+                <constraint firstAttribute="trailing" secondItem="K1V-yl-Ais" secondAttribute="trailing" constant="15" id="bJJ-TS-9WI"/>
+                <constraint firstItem="R9y-iz-e1y" firstAttribute="trailing" secondItem="K1V-yl-Ais" secondAttribute="trailing" id="bq5-6Y-twy"/>
+                <constraint firstItem="R9y-iz-e1y" firstAttribute="centerY" secondItem="An0-gq-n8K" secondAttribute="centerY" id="etM-W2-PKh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.5" y="36.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="zai-jg-Xmd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="38" y="519"/>
+        </view>
+    </objects>
+</document>

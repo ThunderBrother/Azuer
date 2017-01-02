@@ -8,7 +8,7 @@
 
 #import "OTSNetworkError.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 #define IP_CACHE_TIME     14400               //dns ip缓存时间，单位秒，4小时
 

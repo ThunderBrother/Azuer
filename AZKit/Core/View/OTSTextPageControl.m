@@ -7,7 +7,7 @@
 //
 
 #import "OTSTextPageControl.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "UIView+Frame.h"
 #import "UIView+Border.h"
 #import "UIColor+Utility.h"

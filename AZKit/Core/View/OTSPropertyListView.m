@@ -10,7 +10,7 @@
 #import "NSArray+safe.h"
 #import "UIView+Frame.h"
 #import "UIColor+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @implementation OTSPropertyListView {
     NSMutableArray<UILabel*> *_titleLabels;

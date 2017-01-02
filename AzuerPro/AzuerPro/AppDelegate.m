@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -56,5 +58,38 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Getter
 
+- (UIWindow*) window {
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+        _window.backgroundColor = [UIColor whiteColor];
+        _window.rootViewController = [UIViewController new];
+    }
+    return _window;
+}
+
+- (UIWindow *) modalWindow {
+    if (!_modalWindow) {
+        _modalWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _modalWindow.backgroundColor = [UIColor clearColor];
+        _modalWindow.windowLevel = UIWindowLevelNormal + 1;
+        _modalWindow.rootViewController = [UIViewController new];
+        [_modalWindow makeKeyAndVisible];
+        _modalWindow.hidden = YES;
+    }
+    return _modalWindow;
+}
+
+- (UIWindow *) topWindow {
+    if (!_topWindow) {
+        _topWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _topWindow.backgroundColor = [UIColor clearColor];
+        _topWindow.windowLevel = UIWindowLevelAlert + 1;
+        _topWindow.rootViewController = [UIViewController new];
+        [_topWindow makeKeyAndVisible];
+        _topWindow.hidden = YES;
+    }
+    return _topWindow;
+}
 @end

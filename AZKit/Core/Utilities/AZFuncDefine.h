@@ -1,15 +1,14 @@
 //
-//  OTSFuncDefine.h
-//  OneStoreFramework
+//  AZFuncDefine.h
+//  AZKit
 //
-//  Created by Aimy on 14-6-23.
-//  Copyright (c) 2014年 OneStore. All rights reserved.
+//  Created by zhangzuming on 1/2/17.
+//  Copyright © 2017 Azuer. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 
-#ifndef OTSFuncDefine_h
-#define OTSFuncDefine_h
+#ifndef AZFuncDefine_h
+#define AZFuncDefine_h
 
 typedef void(^OTSNoParamNoReturnBlock)(void);
 
@@ -109,6 +108,4 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
-#endif /* OTSFuncDefine_h */
-
-
+#endif /* AZFuncDefine_h */

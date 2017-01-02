@@ -12,7 +12,7 @@
 #import "UIView+Border.h"
 #import "UIImageView+Network.h"
 #import "UIColor+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 static const CGFloat OTSEllipsisWidth = 14.0;
 

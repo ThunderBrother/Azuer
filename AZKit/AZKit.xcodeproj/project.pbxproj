@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9AD007AF3ED4FB8AB89E489 /* libPods-AZKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE901250D04EB7AE7D674EBA /* libPods-AZKit.a */; };
+		F9C188FC1E19FEA800539632 /* AZFuncDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C188FB1E19FEA800539632 /* AZFuncDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E2A47F1E162A8F0088173D /* AZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E2A4751E162A8E0088173D /* AZKit.framework */; };
 		F9E2A4841E162A8F0088173D /* AZKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2A4831E162A8F0088173D /* AZKitTests.m */; };
 		F9E2A4861E162A8F0088173D /* AZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2A4781E162A8E0088173D /* AZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,7 +104,6 @@
 		F9E2A6051E162D4C0088173D /* NSString+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2A4F41E162D4C0088173D /* NSString+Frame.m */; };
 		F9E2A6061E162D4C0088173D /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2A4F51E162D4C0088173D /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E2A6071E162D4C0088173D /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2A4F61E162D4C0088173D /* NSString+MD5.m */; };
-		F9E2A6081E162D4C0088173D /* OTSFuncDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2A4F71E162D4C0088173D /* OTSFuncDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E2A6091E162D4C0088173D /* OTSNotificationDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2A4F81E162D4C0088173D /* OTSNotificationDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E2A60A1E162D4C0088173D /* UIButton+EnlargeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2A4F91E162D4C0088173D /* UIButton+EnlargeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E2A60B1E162D4C0088173D /* UIButton+EnlargeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2A4FA1E162D4C0088173D /* UIButton+EnlargeArea.m */; };
@@ -276,6 +276,7 @@
 /* Begin PBXFileReference section */
 		081B92FE45796C2AEFF8D88C /* Pods-AZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZKit.debug.xcconfig"; path = "../Pods/Pods/Target Support Files/Pods-AZKit/Pods-AZKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C9E96CBE419DB5CE17733F25 /* Pods-AZKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZKit.release.xcconfig"; path = "../Pods/Pods/Target Support Files/Pods-AZKit/Pods-AZKit.release.xcconfig"; sourceTree = "<group>"; };
+		F9C188FB1E19FEA800539632 /* AZFuncDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZFuncDefine.h; sourceTree = "<group>"; };
 		F9E2A4751E162A8E0088173D /* AZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2A4781E162A8E0088173D /* AZKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZKit.h; sourceTree = "<group>"; };
 		F9E2A4791E162A8E0088173D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -374,7 +375,6 @@
 		F9E2A4F41E162D4C0088173D /* NSString+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Frame.m"; sourceTree = "<group>"; };
 		F9E2A4F51E162D4C0088173D /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		F9E2A4F61E162D4C0088173D /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		F9E2A4F71E162D4C0088173D /* OTSFuncDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFuncDefine.h; sourceTree = "<group>"; };
 		F9E2A4F81E162D4C0088173D /* OTSNotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNotificationDefine.h; sourceTree = "<group>"; };
 		F9E2A4F91E162D4C0088173D /* UIButton+EnlargeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeArea.h"; sourceTree = "<group>"; };
 		F9E2A4FA1E162D4C0088173D /* UIButton+EnlargeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeArea.m"; sourceTree = "<group>"; };
@@ -779,6 +779,7 @@
 		F9E2A4E21E162D4C0088173D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F9C188FB1E19FEA800539632 /* AZFuncDefine.h */,
 				F9E2A4E31E162D4C0088173D /* NSDate+Utility.h */,
 				F9E2A4E41E162D4C0088173D /* NSDate+Utility.m */,
 				F9E2A4E51E162D4C0088173D /* NSNumber+Format.h */,
@@ -799,7 +800,6 @@
 				F9E2A4F41E162D4C0088173D /* NSString+Frame.m */,
 				F9E2A4F51E162D4C0088173D /* NSString+MD5.h */,
 				F9E2A4F61E162D4C0088173D /* NSString+MD5.m */,
-				F9E2A4F71E162D4C0088173D /* OTSFuncDefine.h */,
 				F9E2A4F81E162D4C0088173D /* OTSNotificationDefine.h */,
 				F9E2A4F91E162D4C0088173D /* UIButton+EnlargeArea.h */,
 				F9E2A4FA1E162D4C0088173D /* UIButton+EnlargeArea.m */,
@@ -1125,6 +1125,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C188FC1E19FEA800539632 /* AZFuncDefine.h in Headers */,
 				F9E2A6221E162D4C0088173D /* UIViewController+Loading.h in Headers */,
 				F9E2A66F1E162D4C0088173D /* CdnLog.h in Headers */,
 				F9E2A6711E162D4C0088173D /* CdnLogVO.h in Headers */,
@@ -1132,7 +1133,6 @@
 				F9E2A5F21E162D4C0088173D /* UICollectionView+safe.h in Headers */,
 				F9E2A5CA1E162D4C0088173D /* OTSLog.h in Headers */,
 				F9E2A6141E162D4C0088173D /* UIImage+Utility.h in Headers */,
-				F9E2A6081E162D4C0088173D /* OTSFuncDefine.h in Headers */,
 				F9E2A6161E162D4C0088173D /* UIImageView+Network.h in Headers */,
 				F9E2A6361E162D4C0088173D /* OTSImageCollectionView.h in Headers */,
 				F9E2A6941E162D4C0088173D /* OTSServerError.h in Headers */,
@@ -1307,8 +1307,7 @@
 				TargetAttributes = {
 					F9E2A4741E162A8E0088173D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = GLGC3CX682;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F9E2A47D1E162A8F0088173D = {
 						CreatedOnToolsVersion = 8.0;
@@ -1638,7 +1637,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GLGC3CX682;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1658,7 +1657,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GLGC3CX682;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

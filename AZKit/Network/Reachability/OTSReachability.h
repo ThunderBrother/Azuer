@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 typedef NS_ENUM(NSInteger, ENetWorkStatus) {
     kConnectToNull = 0,

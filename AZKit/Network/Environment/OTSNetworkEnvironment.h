@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 typedef NS_ENUM(NSInteger ,OTSNetworkEnvironmentType) {
     OTSNetworkEnvironmentTypeProduct = 0, //生成环境,线上环境

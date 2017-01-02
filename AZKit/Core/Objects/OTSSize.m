@@ -8,7 +8,7 @@
 
 #import "OTSSize.h"
 
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "OTSLog.h"
 
 @import UIKit.UIScreen;

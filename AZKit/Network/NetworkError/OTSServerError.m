@@ -8,7 +8,7 @@
 
 #import "OTSServerError.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 //network
 #import "OTSNetworkManager.h"
 #import "OTSOperationManager.h"

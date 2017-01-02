@@ -8,7 +8,7 @@
 
 #import "OTSOperationManager+Batch.h"
 //define
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 
 @interface OTSOperationManager()
 

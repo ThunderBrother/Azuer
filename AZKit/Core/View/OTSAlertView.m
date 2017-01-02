@@ -7,7 +7,7 @@
 //
 
 #import "OTSAlertView.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "UIColor+Utility.h"
 
 @interface OTSAlertView () <UIAlertViewDelegate>

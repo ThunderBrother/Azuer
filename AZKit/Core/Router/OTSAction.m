@@ -11,7 +11,7 @@
 #import "UIViewController+Loading.h"
 #import "UIView+Toast.h"
 #import "UIColor+Utility.h"
-#import "OTSFuncDefine.h"
+#import "AZFuncDefine.h"
 #import "UIViewController+RefreshAction.h"
 
 
