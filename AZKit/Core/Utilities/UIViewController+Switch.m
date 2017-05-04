@@ -34,11 +34,14 @@
 - (BOOL)switchToVCAtIndex:(NSInteger)index {
     NSArray *viewControllers = self.childViewControllers;
     if (index >= 0 && index < viewControllers.count) {
+        UIViewController *selectedVC = viewControllers[index];
+        [selectedVC viewWillAppear:true];
         if ([self isKindOfClass:[UITabBarController class]]) {
             ((UITabBarController*)self).selectedIndex = index;
         } else if([self isKindOfClass:[UINavigationController class]]) {
             [((UINavigationController*)self) popToViewController:viewControllers[index] animated:true];
         }
+        [selectedVC viewDidAppear:true];
         return true;
     } else {
         return false;

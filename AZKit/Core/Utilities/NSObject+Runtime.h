@@ -18,9 +18,9 @@ FOUNDATION_EXTERN NSString *const OTSObjectTypeRawPointer;
 
 @interface NSObject (Runtime)
 
-@property (nonatomic, strong, readonly) NSMutableArray *associatedObjectNames;
+@property (nonatomic, strong, readonly) NSMutableSet *associatedObjectNames;
 @property (nonatomic, strong, readonly) NSArray<NSString*> *properties;
-@property (nonatomic, strong, readonly) NSArray<NSDictionary<NSString*, NSString*>*> *propertyInfos;//KEY:propertyName, Value:propertyType
+@property (nonatomic, strong, readonly) NSDictionary<NSString*, NSString*> *propertyInfos;//KEY:propertyName, Value:propertyType
 
 /**
  *  为当前object动态增加分类

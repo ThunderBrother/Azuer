@@ -12,7 +12,7 @@
 
 @implementation UIView (loading)
 
-static NSString *OTSHudViewKey = @"OTSHudViewKey";
+NSString *const OTSHudViewKey = @"OTSHudViewKey";
 
 - (void)showLoading {
     [self showLoadingWithMessage:nil];
@@ -23,6 +23,7 @@ static NSString *OTSHudViewKey = @"OTSHudViewKey";
 }
 
 - (void)showLoadingWithMessage:(NSString *)message hideAfter:(NSTimeInterval)second {
+    [self hideLoading];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
     
     if (message) {
@@ -35,7 +36,7 @@ static NSString *OTSHudViewKey = @"OTSHudViewKey";
     if (second > 0) {
         [hud hideAnimated:true afterDelay:second];
     } else {
-        [self objc_setAssociatedObject:OTSHudViewKey value:hud policy:OBJC_ASSOCIATION_RETAIN];
+        [self objc_setAssociatedObject:OTSHudViewKey value:hud policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
     }
 }
 

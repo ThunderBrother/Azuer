@@ -13,7 +13,7 @@
 
 @end
 
-static NSString *const kOriginDelegate = @"kOriginDelegate";
+NSString *const kOriginDelegate = @"kOriginDelegate";
 
 @implementation UINavigationController (ShouldPopOnBackAction)
 
@@ -52,18 +52,18 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
 
 - (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
     if([self.viewControllers count] < [navigationBar.items count]) {
-        return YES;
+        return true;
     }
     
-    BOOL shouldPop = YES;
-    UIViewController* vc = [self topViewController];
+    BOOL shouldPop = true;
+    UIViewController* vc = self.topViewController;
     if([vc respondsToSelector:@selector(navigationShouldPopOnBackButtonClicked)]) {
         shouldPop = [vc navigationShouldPopOnBackButtonClicked];
     }
     
     if(shouldPop) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self popViewControllerAnimated:YES];
+            [self popViewControllerAnimated:true];
         });
     } else {
         for(UIView *subview in [navigationBar subviews]) {
@@ -74,12 +74,15 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
             }
         }
     }
-    return NO;
+    return false;
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer == self.interactivePopGestureRecognizer) {
-        UIViewController *vc = [self topViewController];
+        if (self.viewControllers.count <= 1) {
+            return false;
+        }
+        UIViewController *vc = self.topViewController;
         if([vc respondsToSelector:@selector(navigationShouldPopOnBackButtonClicked)]) {
             return [vc navigationShouldPopOnBackButtonClicked];
         }

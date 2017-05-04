@@ -22,6 +22,8 @@ end
 target 'AzuerPro' do
     project '../AzuerPro/AzuerPro.xcodeproj'
     pod 'Masonry'
+    pod 'Aspects'
+    pod 'iCarousel'#,'1.8.1'
 end
 
 

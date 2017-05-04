@@ -27,23 +27,23 @@
     
     if (scrollView != nil) {
         
-        if (action == OTSActionOptionHeaderSuccessfully && scrollView.refreshHeader) {
+        if (action & OTSActionOptionHeaderSuccessfully && scrollView.refreshHeader) {
             [scrollView headerActionSuccessfully];
         }
         
-        if (action == OTSActionOptionFooterSuccessfully && scrollView.refreshFooter) {
+        if (action & OTSActionOptionFooterSuccessfully && scrollView.refreshFooter) {
             [scrollView footerActionSuccessfully];
         }
         
-        if (action == OTSActionOptionHeaderError && scrollView.refreshHeader) {
+        if (action & OTSActionOptionHeaderError && scrollView.refreshHeader) {
             [scrollView headerActionError:message];
         }
         
-        if (action == OTSActionOptionFooterError && scrollView.refreshFooter) {
+        if (action & OTSActionOptionFooterError && scrollView.refreshFooter) {
             [scrollView footerActionError:message];
         }
         
-        if (action == OTSActionOptionFooterPause && scrollView.refreshFooter) {
+        if (action & OTSActionOptionFooterPause && scrollView.refreshFooter) {
             [scrollView footerActionPause:message];
         }
         

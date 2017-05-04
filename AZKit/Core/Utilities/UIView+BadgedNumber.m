@@ -13,9 +13,9 @@
 
 @implementation UIView (BadgedNumber)
 
-static NSString *OTSBadgeLabelLayerKey = @"OTSBadgedTextLayerKey";
-static NSString *OTSBadgePositionKey = @"OTSBadgedPositionKey";
-static NSString *OTSBadgeValueKey = @"OTSBadgedValueKey";
+NSString *const OTSBadgeLabelLayerKey = @"OTSBadgedTextLayerKey";
+NSString *const OTSBadgePositionKey = @"OTSBadgedPositionKey";
+NSString *const OTSBadgeValueKey = @"OTSBadgedValueKey";
 
 #pragma mark - Getter & Setter
 - (void)setBadgeString:(NSString *)badgeString {
@@ -37,8 +37,8 @@ static NSString *OTSBadgeValueKey = @"OTSBadgedValueKey";
     
     CGSize badgeSize = [badgeString sizeWithFont:[UIFont systemFontOfSize:badgedLabelLayer.fontSize] lineBreakMode:NSLineBreakByWordWrapping preferredWidth:CGFLOAT_MAX];
     
-    CGFloat badgeLabelWidth = ceil(badgeSize.width + 7.0);
-    CGFloat badgeLabelHeight = 12.0;
+    CGFloat badgeLabelWidth = ceil(badgeSize.width + (self.badgePosition == OTSBadgePositionOutside ? 11.0 : 9.0));
+    CGFloat badgeLabelHeight = 14.0;
     
     if (self.badgePosition == OTSBadgePositionInside) {
         badgedLabelLayer.frame = CGRectMake(self.width - badgeLabelHeight - 4.0, 4.0, badgeLabelWidth, badgeLabelHeight);
@@ -66,8 +66,8 @@ static NSString *OTSBadgeValueKey = @"OTSBadgedValueKey";
     labelLayer.contentsScale = [UIScreen mainScreen].scale;
     labelLayer.foregroundColor = [UIColor whiteColor].CGColor;
     labelLayer.backgroundColor = [UIColor redColor].CGColor;
-    labelLayer.fontSize = 9.0;
-    labelLayer.cornerRadius = 6.0;
+    labelLayer.fontSize = 10.0;
+    labelLayer.cornerRadius = 7.0;
     labelLayer.alignmentMode = kCAAlignmentCenter;
     labelLayer.masksToBounds = true;
     return labelLayer;

@@ -9,34 +9,34 @@
 #import "NSObject+Runtime.h"
 #import "OTSLog.h"
 
-NSString *const OTSObjectTypeNotHandled = @"__OTS_OBJECT_TYPE_NOT_HANDLED";
-NSString *const OTSObjectTypeClass = @"__OTS_OBJECT_TYPE_CLASS";
+NSString *const OTSObjectTypeNotHandled = @"NSOBJECT_TYPE_NOT_HANDLED";
+NSString *const OTSObjectTypeClass = @"NSOBJECT_TYPE_CLASS";
 
-NSString *const OTSObjectTypeRawInt = @"__OTS_OBJECT_TYPE_RAW_INT";
-NSString *const OTSObjectTypeRawFloat = @"__OTS_OBJECT_TYPE_RAW_FLOAT";
-NSString *const OTSObjectTypeRawPointer = @"__OTS_OBJECT_TYPE_RAW_POINTER";
+NSString *const OTSObjectTypeRawInt = @"NSOBJECT_TYPE_RAW_INT";
+NSString *const OTSObjectTypeRawFloat = @"NSOBJECT_TYPE_RAW_FLOAT";
+NSString *const OTSObjectTypeRawPointer = @"NSOBJECT_TYPE_RAW_POINTER";
 
 
 @implementation NSObject (Runtime)
 
 static char associatedObjectNamesKey;
 
-- (void)setAssociatedObjectNames:(NSMutableArray *)associatedObjectNames {
+- (void)setAssociatedObjectNames:(NSMutableSet *)associatedObjectNames {
     objc_setAssociatedObject(self, &associatedObjectNamesKey, associatedObjectNames,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSMutableArray *)associatedObjectNames {
-    NSMutableArray *array = objc_getAssociatedObject(self, &associatedObjectNamesKey);
+- (NSMutableSet *)associatedObjectNames {
+    NSMutableSet *array = objc_getAssociatedObject(self, &associatedObjectNamesKey);
     if (!array) {
-        array = [NSMutableArray array];
+        array = [NSMutableSet set];
         [self setAssociatedObjectNames:array];
     }
     return array;
 }
 
 - (void)objc_setAssociatedObject:(NSString *)propertyName value:(id)value policy:(objc_AssociationPolicy)policy {
-    objc_setAssociatedObject(self, (__bridge objc_objectptr_t)propertyName, value, policy);
     [self.associatedObjectNames addObject:propertyName];
+    objc_setAssociatedObject(self, (__bridge  objc_objectptr_t)propertyName, value, policy);
 }
 
 - (id)objc_getAssociatedObject:(NSString *)propertyName {
@@ -89,8 +89,8 @@ static char associatedObjectNamesKey;
     return props;
 }
 
-- (NSArray*)propertyInfos {
-    NSMutableArray *props = [NSMutableArray array];
+- (NSDictionary*)propertyInfos {
+    NSMutableDictionary *props = [NSMutableDictionary dictionary];
     unsigned int outCount, i;
     Class targetClass = [self class];
     while (targetClass != [NSObject class]) {
@@ -114,15 +114,28 @@ static char associatedObjectNamesKey;
             
             if (strcmp(rawPropertyType, @encode(float)) == 0) {
                 resultPropertyType = OTSObjectTypeRawFloat;
-            } else if (strcmp(rawPropertyType, @encode(int)) == 0) {
+            } else if (strcmp(rawPropertyType, @encode(int)) == 0 || strcmp(rawPropertyType, @encode(NSUInteger)) == 0) {
                 resultPropertyType = OTSObjectTypeRawInt;
             } else if (strcmp(rawPropertyType, @encode(id)) == 0) {
                 resultPropertyType = OTSObjectTypeRawPointer;
             }
             if ([typeAttribute hasPrefix:@"T@"]) {
-                resultPropertyType = OTSObjectTypeClass;
+                NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:@"\"(.*)\"" options:0 error:NULL];
+                NSArray *matches = [pattern matchesInString:typeAttribute
+                                                                options:0
+                                                                  range:NSMakeRange(0, [typeAttribute length])];
+                
+                for (NSTextCheckingResult *match in matches) {
+                    resultPropertyType = [typeAttribute substringWithRange:[match range]];
+                    resultPropertyType = [resultPropertyType stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+                    break;
+                } 
+                
+                if (!resultPropertyType) {
+                    resultPropertyType = OTSObjectTypeClass;
+                }
             }
-            [props addObject:@{resultPropertyName:(resultPropertyType?:OTSObjectTypeNotHandled)}];
+            [props setObject:(resultPropertyType?:OTSObjectTypeNotHandled) forKey:resultPropertyName ?: @""];
         }
         free(properties);
         targetClass = [targetClass superclass];

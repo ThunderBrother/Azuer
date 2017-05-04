@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608806A61EB7467D00538948 /* AZHomepageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 608806A51EB7467D00538948 /* AZHomepageVC.m */; };
 		C3EB46834A7E169EE84A87C1 /* libPods-AzuerPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DDA743C225DC1475C7E126 /* libPods-AzuerPro.a */; };
 		F9A376DF1E10E12C0074FEA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376DE1E10E12C0074FEA8 /* main.m */; };
 		F9A376E21E10E12C0074FEA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376E11E10E12C0074FEA8 /* AppDelegate.m */; };
-		F9A376E51E10E12C0074FEA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376E41E10E12C0074FEA8 /* ViewController.m */; };
 		F9A376E81E10E12C0074FEA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A376E61E10E12C0074FEA8 /* Main.storyboard */; };
 		F9A376EA1E10E12C0074FEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A376E91E10E12C0074FEA8 /* Assets.xcassets */; };
 		F9A376ED1E10E12C0074FEA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A376EB1E10E12C0074FEA8 /* LaunchScreen.storyboard */; };
 		F9A376F81E10E12C0074FEA8 /* AzuerProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A376F71E10E12C0074FEA8 /* AzuerProTests.m */; };
 		F9A377031E10E12C0074FEA8 /* AzuerProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A377021E10E12C0074FEA8 /* AzuerProUITests.m */; };
+		F9C189181E1A1C9C00539632 /* AZLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C189141E1A1C9C00539632 /* AZLaunch.m */; };
+		F9C1891B1E1A1CE500539632 /* AZMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C1891A1E1A1CE500539632 /* AZMainTabBarVC.m */; };
 		F9E2A6A71E16315B0088173D /* AZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E2A6A61E16315B0088173D /* AZKit.framework */; };
 		F9E2A6A91E1640A30088173D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E2A6A81E1640A30088173D /* ImageIO.framework */; };
 		F9E2A6AB1E1640B80088173D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E2A6AA1E1640B80088173D /* CFNetwork.framework */; };
@@ -41,14 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		608806A41EB7467D00538948 /* AZHomepageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZHomepageVC.h; sourceTree = "<group>"; };
+		608806A51EB7467D00538948 /* AZHomepageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZHomepageVC.m; sourceTree = "<group>"; };
 		A39B4CC4A69B1FA5EDE0D860 /* Pods-AzuerPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzuerPro.debug.xcconfig"; path = "../Pods/Pods/Target Support Files/Pods-AzuerPro/Pods-AzuerPro.debug.xcconfig"; sourceTree = "<group>"; };
 		C8DDA743C225DC1475C7E126 /* libPods-AzuerPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AzuerPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A376DA1E10E12C0074FEA8 /* AzuerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzuerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A376DE1E10E12C0074FEA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9A376E01E10E12C0074FEA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9A376E11E10E12C0074FEA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F9A376E31E10E12C0074FEA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F9A376E41E10E12C0074FEA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F9A376E71E10E12C0074FEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9A376E91E10E12C0074FEA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9A376EC1E10E12C0074FEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,10 @@
 		F9A376FE1E10E12C0074FEA8 /* AzuerProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzuerProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A377021E10E12C0074FEA8 /* AzuerProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzuerProUITests.m; sourceTree = "<group>"; };
 		F9A377041E10E12C0074FEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C189131E1A1C9C00539632 /* AZLaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLaunch.h; sourceTree = "<group>"; };
+		F9C189141E1A1C9C00539632 /* AZLaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLaunch.m; sourceTree = "<group>"; };
+		F9C189191E1A1CE500539632 /* AZMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZMainTabBarVC.h; sourceTree = "<group>"; };
+		F9C1891A1E1A1CE500539632 /* AZMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZMainTabBarVC.m; sourceTree = "<group>"; };
 		F9E2A6A61E16315B0088173D /* AZKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AZKit.framework; path = "../AZKit/build/Release-iphoneos/AZKit.framework"; sourceTree = "<group>"; };
 		F9E2A6A81E1640A30088173D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F9E2A6AA1E1640B80088173D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -107,6 +113,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6088068B1EB7457E00538948 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				608806A41EB7467D00538948 /* AZHomepageVC.h */,
+				608806A51EB7467D00538948 /* AZHomepageVC.m */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
 		821ECDF34D1C7B1385674863 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +138,7 @@
 		F9A376D11E10E12C0074FEA8 = {
 			isa = PBXGroup;
 			children = (
+				F9C189111E1A1C9C00539632 /* Modules */,
 				F9A376DC1E10E12C0074FEA8 /* AzuerPro */,
 				F9A376F61E10E12C0074FEA8 /* AzuerProTests */,
 				F9A377011E10E12C0074FEA8 /* AzuerProUITests */,
@@ -147,8 +163,6 @@
 			children = (
 				F9A376E01E10E12C0074FEA8 /* AppDelegate.h */,
 				F9A376E11E10E12C0074FEA8 /* AppDelegate.m */,
-				F9A376E31E10E12C0074FEA8 /* ViewController.h */,
-				F9A376E41E10E12C0074FEA8 /* ViewController.m */,
 				F9A376E61E10E12C0074FEA8 /* Main.storyboard */,
 				F9A376E91E10E12C0074FEA8 /* Assets.xcassets */,
 				F9A376EB1E10E12C0074FEA8 /* LaunchScreen.storyboard */,
@@ -182,6 +196,50 @@
 				F9A377041E10E12C0074FEA8 /* Info.plist */,
 			);
 			path = AzuerProUITests;
+			sourceTree = "<group>";
+		};
+		F9C189111E1A1C9C00539632 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6088068B1EB7457E00538948 /* Homepage */,
+				F9C189121E1A1C9C00539632 /* Launch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F9C189121E1A1C9C00539632 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F9C189131E1A1C9C00539632 /* AZLaunch.h */,
+				F9C189141E1A1C9C00539632 /* AZLaunch.m */,
+				F9C189151E1A1C9C00539632 /* Logic */,
+				F9C189161E1A1C9C00539632 /* Main */,
+				F9C189171E1A1C9C00539632 /* VC */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		F9C189151E1A1C9C00539632 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		F9C189161E1A1C9C00539632 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F9C189171E1A1C9C00539632 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F9C189191E1A1CE500539632 /* AZMainTabBarVC.h */,
+				F9C1891A1E1A1CE500539632 /* AZMainTabBarVC.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9D1EBC3941C42B257A42B851 /* [CP] Embed Pods Frameworks */ = {
@@ -371,9 +429,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A376E51E10E12C0074FEA8 /* ViewController.m in Sources */,
 				F9A376E21E10E12C0074FEA8 /* AppDelegate.m in Sources */,
 				F9A376DF1E10E12C0074FEA8 /* main.m in Sources */,
+				F9C1891B1E1A1CE500539632 /* AZMainTabBarVC.m in Sources */,
+				F9C189181E1A1C9C00539632 /* AZLaunch.m in Sources */,
+				608806A61EB7467D00538948 /* AZHomepageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

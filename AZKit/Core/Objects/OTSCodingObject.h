@@ -10,4 +10,10 @@
 
 @interface OTSCodingObject : NSObject<NSCoding>
 
++ (Class)collectionClassForKey:(NSString*)key;
+
+- (instancetype)initWithDictionary:(NSDictionary*)dict;
+
++ (NSArray<__kindof OTSCodingObject*>*) arrayWithJSONArray:(NSArray<NSDictionary*>*)array;
+
 @end

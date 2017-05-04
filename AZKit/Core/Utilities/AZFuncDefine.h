@@ -59,6 +59,12 @@ static __class * __singleton__; \
 dispatch_once(&once, ^{ __singleton__ = [[__class alloc] init]; } ); \
 return __singleton__; \
 }
+//KVO
+#define OTSObserve(TARGET, KEYPATH) self.KVOController observe:(TARGET) keyPath:(((void)(NO && ((void)[TARGET KEYPATH], NO)), @# KEYPATH)) options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld block:^(id observer, id object, NSDictionary<NSString *,id> *change)
+
+#define OTSNullReturn(CHANGE_KEY) if (change[CHANGE_KEY] == [NSNull null]) {\
+return;\
+}\
 
 //判断ios版本
 #define IOS_SDK_MORE_THAN_OR_EQUAL(__num) [UIDevice currentDevice].systemVersion.floatValue >= (__num)
@@ -107,5 +113,11 @@ _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
 Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
+
+//Color
+#define OTSThemeColorV       0xFC575D
+#define OTSBackgroundColorV  0xf2f2f2
+#define OTSTextDarkColorV    0x333333
+#define OTSTextLightColorV   0x757575
 
 #endif /* AZFuncDefine_h */

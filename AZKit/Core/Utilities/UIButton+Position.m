@@ -15,8 +15,8 @@
 #pragma mark - LifeCycle
 - (CGSize)intrinsicContentSize {
     if (self.position == OTSButtonPositionImageTop) {
-        CGFloat width = MAX(self.imageView.width, self.titleLabel.intrinsicContentSize.width) + self.contentEdgeInsets.left + self.contentEdgeInsets.right;
-        CGFloat height = self.imageView.height + self.titleLabel.intrinsicContentSize.height + self.offset + self.contentEdgeInsets.top + self.contentEdgeInsets.bottom;
+        CGFloat width = MAX(self.imageView.intrinsicContentSize.width, self.titleLabel.intrinsicContentSize.width) + self.contentEdgeInsets.left + self.contentEdgeInsets.right;
+        CGFloat height = self.imageView.intrinsicContentSize.height + self.titleLabel.intrinsicContentSize.height + self.offset + self.contentEdgeInsets.top + self.contentEdgeInsets.bottom;
         return CGSizeMake(width, height);
     }
     
@@ -33,17 +33,25 @@
     CGFloat halfOffset = offset * .5f;
     OTSButtonPosition position = self.position;
     self.contentEdgeInsets = UIEdgeInsetsMake(padding, padding, padding, padding);
-    CGSize size = [self intrinsicContentSize];
+    
+    CGFloat imageWidth = self.imageView.intrinsicContentSize.width;
+    CGFloat titleWidth = self.titleLabel.intrinsicContentSize.width;
+    
     if (position == OTSButtonPositionDefault) {
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, halfOffset, 0, 0);
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, halfOffset, 0, -halfOffset);
         self.imageEdgeInsets = UIEdgeInsetsMake(0, -halfOffset, 0, 0);
     } else if (position == OTSButtonPositionImageRight) {
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.width - size.width + self.titleLabel.intrinsicContentSize.width + halfOffset + padding * 2, 0, 0);
-        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -self.titleLabel.intrinsicContentSize.width - size.width + self.imageView.width + halfOffset + padding * 2);
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, - imageWidth - halfOffset, 0, imageWidth + halfOffset);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, titleWidth + halfOffset, 0, - titleWidth - halfOffset);
     } else if(position == OTSButtonPositionImageTop) {
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.width, -self.imageView.height - halfOffset, 0);
-        self.imageEdgeInsets = UIEdgeInsetsMake(-self.titleLabel.intrinsicContentSize.height - halfOffset, 0, 0, -self.titleLabel.intrinsicContentSize.width);
+        
+        CGFloat imageHeight = self.imageView.intrinsicContentSize.height;
+        CGFloat titleHeight = self.titleLabel.intrinsicContentSize.height;
+        
+        self.titleEdgeInsets = UIEdgeInsetsMake(imageHeight + halfOffset, -imageWidth, 0, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(-titleHeight * .5 - halfOffset, 0, titleHeight * .5 + halfOffset, 0);
     }
+    [self invalidateIntrinsicContentSize];
 }
 
 #pragma mark - Getter & Setter

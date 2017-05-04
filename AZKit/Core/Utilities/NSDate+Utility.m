@@ -12,6 +12,40 @@
 
 @implementation NSDate(Utility)
 
++ (instancetype)dateWithDateString:(NSString*)dateString {
+    return [[NSDate __otsDefaultDateFormatter] dateFromString:dateString];
+}
+
++ (instancetype)dateWithTimeString:(NSString*)timeString {
+    return [[NSDate __otsDefaultTimeFormatter] dateFromString:timeString];
+}
+
++ (NSDateFormatter*)__otsDefaultDateFormatter {
+    static NSDateFormatter *__dateFormatter = nil;
+    if (!__dateFormatter) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"dd-MMM-yyyy";
+        formatter.timeZone = [NSTimeZone localTimeZone];
+        [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+        
+        __dateFormatter = formatter;
+    }
+    return __dateFormatter;
+}
+
++ (NSDateFormatter*)__otsDefaultTimeFormatter {
+    static NSDateFormatter *__timeFormatter = nil;
+    if (!__timeFormatter) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"dd-MMM-yyyy HH:mm:ss";
+        formatter.timeZone = [NSTimeZone localTimeZone];
+        [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+        
+        __timeFormatter = formatter;
+    }
+    return __timeFormatter;
+}
+
 - (NSInteger )distanceNowDays {
 	NSTimeInterval seconds = [self timeIntervalSinceNow];
 	if (seconds < 0) {
@@ -46,176 +80,14 @@
  *  功能:转换成日期字符串，精确到天
  */
 - (NSString *)dateString {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"MMM dd, yyyy";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
-    NSString *ret = [formatter stringFromDate:self];
-    
-    return ret;
+    return [[NSDate __otsDefaultDateFormatter] stringFromDate:self];
 }
 
 /**
  *  功能:转换成时间字符串，精确到秒
  */
 - (NSString *)timeString {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(0, 19)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，精确到天
- */
-- (NSString *)anotherTimeString {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"MM/dd/yyyy HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(0, 10)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，精确到分
- */
-- (NSString *)timeStringToSecond {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(0, 16)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，精确到分
- */
-- (NSString *)anotherTimeStringToSecond {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy.MM.dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(0, 16)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，获取时分秒部分
- */
-- (NSString *)hourMinuteSecondString {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(11, 8)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，获取时分部分
- *
- *	@return
- */
-- (NSString *)hourMinuteString {
-
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-	formatter.timeZone = [NSTimeZone localTimeZone];
-
-	NSString *ret = [formatter stringFromDate:self];
-
-	if (ret.length >= 19) {
-		ret = [ret safeSubstringWithRange:NSMakeRange(11, 5)];
-	}
-	return ret;
-}
-
-/**
- *  功能:转换成时间字符串，获取时部分
- *
- *	@return
- */
-- (NSString *)hourString {
-    
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    
-    if (ret.length >= 19) {
-        ret = [ret safeSubstringWithRange:NSMakeRange(11, 2)];
-    }
-    return ret;
-}
-
-/**
- *  功能:转换成时间字符串，获取月天时分秒部分
- */
-- (NSDictionary *)monthDayHourMinuteString {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    
-    NSString *ret = [formatter stringFromDate:self];
-    NSDictionary * dic = nil;
-    if (ret.length >= 19) {
-        NSString *month = [ret safeSubstringWithRange:NSMakeRange(5, 2)];
-        NSString *day = [ret safeSubstringWithRange:NSMakeRange(8, 2)];
-        NSString *hour = [ret safeSubstringWithRange:NSMakeRange(11, 2)];
-        NSString *minute = [ret safeSubstringWithRange:NSMakeRange(14, 2)];
-        dic = [NSDictionary dictionaryWithObjectsAndKeys:month,@"month",day,@"day",hour,@"hour",minute,@"minute", nil];
-    }
-    return dic;
-}
-
-/**
- 功能:转换成周
- */
-- (NSString *)zhouString {
-    
-    NSString *g_strZhou[] = {
-        @"周日",
-        @"周一",
-        @"周二",
-        @"周三",
-        @"周四",
-        @"周五",
-        @"周六"
-    };
-
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components:kCFCalendarUnitWeekday|NSCalendarUnitYear| NSCalendarUnitMonth|NSCalendarUnitDay fromDate:self];
-    if ( comps.weekday > 0 && comps.weekday <= 7) {
-        return g_strZhou[comps.weekday-1];
-    }
-    else {
-        return @"";
-    }
+    return [[NSDate __otsDefaultTimeFormatter] stringFromDate:self];
 }
 
 /**
@@ -224,8 +96,8 @@
  *  @return 返回YES OR NO
  */
 - (BOOL)isTodayDate {
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDateFormatter* dateFormatter = [NSDate __otsDefaultDateFormatter];
+    
     NSString *today = [dateFormatter stringFromDate:[NSDate date]];
     NSString *day = [dateFormatter stringFromDate:self];
     
@@ -243,8 +115,8 @@
 - (BOOL)isYesterday {
     NSDate *nowDate = [OTSGlobalValue sharedInstance].serverTime;
     
-    NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
-    fmt.dateFormat = @"yyyy-MM-dd";
+    NSDateFormatter *fmt = [NSDate __otsDefaultDateFormatter];
+    
     NSString *selStr = [fmt stringFromDate:self];
     NSDate *selfDate = [fmt dateFromString:selStr];
     NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -261,6 +133,7 @@
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy"];
+    
     NSString *today = [dateFormatter stringFromDate:[NSDate date]];
     NSString *day = [dateFormatter stringFromDate:self];
     
@@ -279,19 +152,5 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     int unit = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     return [calendar components:unit fromDate:self toDate:[NSDate date] options:0];
-}
-
-
-/**
- *  用逗号分隔的日期字符串
- *
- *  @return 逗号分隔的日期字符串
- */
-- (NSString *)dateStringWithDot {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yyyy.MM.dd";
-    formatter.timeZone = [NSTimeZone localTimeZone];
-    NSString *ret = [formatter stringFromDate:self];
-    return ret;
 }
 @end

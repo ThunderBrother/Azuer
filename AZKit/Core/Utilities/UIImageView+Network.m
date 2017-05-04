@@ -33,26 +33,26 @@
         convertedURL = url;
     }
     
+    [self.layer removeAllAnimations];
+    
     NSURL *imageURL = [NSURL URLWithString:convertedURL];
     SDWebImageManager *manager = [SDWebImageManager sharedManager];
     NSString *key = [manager cacheKeyForURL:imageURL];
     
-    UIImage *memoryImage = [manager.imageCache imageFromMemoryCacheForKey:key];
-    if (memoryImage) {
-        self.image = memoryImage;
-        return;
-    }
+    BOOL imageInMemory = ([manager.imageCache imageFromMemoryCacheForKey:key] != nil);
     self.image = nil;
     
     WEAK_SELF;
     [self sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         STRONG_SELF;
         if (!error && image) {
-            CATransition *animation = [CATransition animation];
-            animation.type = kCATransitionFade;
-            animation.timingFunction = UIViewAnimationCurveEaseInOut;
-            animation.duration = .15f;
-            [self.layer addAnimation:animation forKey:nil];
+            if (!imageInMemory) {
+                CATransition *animation = [CATransition animation];
+                animation.type = kCATransitionFade;
+                animation.timingFunction = UIViewAnimationCurveEaseInOut;
+                animation.duration = .2f;
+                [self.layer addAnimation:animation forKey:nil];
+            }
         } else if(compressed) {
             [self sd_setImageWithURL:[NSURL URLWithString:url]];
         }
@@ -73,11 +73,11 @@
     }
     
     NSURL *imageURL = [NSURL URLWithString:convertedURL];
-    [[SDWebImageManager sharedManager] downloadImageWithURL:imageURL options:SDWebImageRetryFailed progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+    [[SDWebImageManager sharedManager] loadImageWithURL:imageURL options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
         if (compressed && error) {
-            [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:url] options:SDWebImageRetryFailed progress:nil completed:^(UIImage *anImage, NSError *anError, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+            [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:url] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
                 if (completion) {
-                    completion(anImage, anError);
+                    completion(image, error);
                 }
             }];
         } else if(completion) {
